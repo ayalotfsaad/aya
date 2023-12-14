@@ -1,0 +1,451 @@
+
+:root{
+    --primary-color: #1C1C1C;
+    --secondary-color:#F7F7F7;
+}
+
+
+p,span,a{
+    font-family: 'Poppins', sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+  
+}
+
+a, span{
+    display: inline-block;
+}
+/* header section*/
+
+.header-sec{
+    background-image: url(../assets/imgs/bg.jpg);
+    background-position:center;
+    background-size: cover;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.logo{
+    cursor: pointer;
+    
+} 
+nav ul li a span{
+    position: relative;
+    cursor: pointer;
+}
+nav ul li a span::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    bottom: -5px;
+}
+header h4{
+    font-size: 50px;
+    font-weight: 800;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 900!important;
+}
+
+header .header-icon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* about-sec  */
+.about img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    vertical-align: middle;
+}
+ 
+ .pic-border {
+    background-image: url(../assets/imgs/dots.png);
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: -40px;
+    left: -20px;
+    z-index: -1;
+    
+}
+   
+
+.progress-first{
+    width: 100%;
+    height: 26px;
+}
+.progress .inner-pro{
+    width: 95%;
+    background-color: var(--primary-color);
+}
+.progress-second{
+    width: 100%;
+    height: 26px;
+}
+.inner-second{   
+    width: 80%;
+    background-color: var(--primary-color);
+}
+.progress-third{
+    width: 100%;
+    height: 26px;
+}
+.inner-third{ 
+    width: 90%;
+    background-color: var(--primary-color);
+}
+
+.test{
+    background-image: url(../assets/imgs/dots.png);
+    background-repeat: repeat;
+}
+.hero-buton .buton-bg{
+    padding: 10px 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+}
+.hero-reaction{
+    transition: 0.5s all;
+    background-color: var(--primary-color);
+    color: white;
+}
+.hero-buton .hero-reaction:hover{
+    background-color: white;
+    color: black;
+}
+.hero-buton .hero-contactme{
+    color: #1C1C1C;
+    transition: 0.5s all;
+}
+.hero-buton .hero-contactme:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+/* animation  */
+.inner-pro{
+    animation-name:changewidth ;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+
+}
+@keyframes changewidth {
+    0%{ width: 50%;}
+    100%{width: 95;}
+}
+.progress-second{
+    animation-name:changewidth ;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes changewidth {
+    0%{ width: 40%;}
+    25%{width: 50%;}
+    50%{width:60% ;}
+     75%{width: 70%;}
+    100%{width: 80%;}
+}
+.progress-third{
+    animation-name:changewidth ;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes changewidth {
+    0%{ width: 50%;}
+    100%{width: 90%;}
+}
+
+/* services section  */
+.services{
+    text-align: center;
+}
+
+
+.under-lines{
+    
+    position: absolute;
+    background-image: url(../assets/imgs/dots.png);
+    background-repeat: repeat;
+    width: 20%;
+    height: 25%;
+     bottom:30% ;
+    left: 40%; 
+    z-index: 1;
+}
+.services-background{
+    background-color: var(--secondary-color);
+}
+.services p{
+    line-height: 2;
+}
+.fokir{
+    width: 90%;
+}
+.web-design .ser-icon{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+   
+}
+.web-design:hover .ser-icon{
+    background-color: var(--primary-color);
+    color: white;
+}
+.Branding .Branding-icon{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+   
+}
+.Branding:hover .Branding-icon{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* portfolio  */
+#Works .nav-item button.active{
+    background-color: white;
+    color: black;
+}
+ #Works .nav-item button{
+    color: black;
+    font-weight: 600;
+    position: relative;
+
+} 
+ .nav-item .nav-line::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color:black;
+    left: 5;
+    bottom: 9px; 
+}
+.nav-item .line-secodary::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color:black;
+    left: 5;
+    bottom: 9px; 
+}
+.nav-item{
+    position: relative;
+}
+.nav-item .line-secodary:hover .nav-item .line-secodary::before{
+    width: 50%;
+}
+.img-overlay .details .ICONS .second-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-overlay .details .ICONS .FIRST-icon{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-img{
+    cursor: pointer;
+}
+.work-img .img-overlay{
+    background-color:rgba(250, 250, 250, 0.9);
+    opacity: 0;
+    transition: all 0.5s;
+    width: 98%;
+    height: 98%;
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.work-img .img-overlay:hover{
+    opacity: 1;
+}
+.work-img .img-overlay .details {
+    position: absolute;
+    transition: all 0.1s;
+}
+.work-img .img-overlay:hover .details{
+    transform: translatey(40px);
+}
+
+
+/* Clients section  */
+.Clients{
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.clients-title h3{
+    position: relative;
+}
+.clients-title h3::before{
+    content: "";
+    position: absolute;
+    background-image:url(../assets/imgs/dots.png);
+    background-repeat: repeat;
+    width: 14%;
+    height: 30%;
+    left: auto;
+    bottom: 30px;
+    z-index: -1;
+}
+.clients-items img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+ }
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: -10px;
+    background-color: #869791;
+
+}
+/* our team  */
+.our-team{
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+
+.card-our img{
+    width: 100%;
+}
+.card-body{
+    background-color:#5A5A5A;
+    color: white;
+}
+.card-img .card-overlay{
+    position: absolute;
+    background-color:rgba(250, 250, 250, 0.9);
+    opacity: 0;
+    transition: all 0.9s ;
+    width: 98%;
+    height: 98%;
+    top: 0;
+    left: 0;
+    margin-top: 4px;
+    margin-left: 4px;
+    transform: scale(0.5,0.5);
+}
+.card-img .card-overlay:hover{
+    opacity: 1;
+    transform: rotatey(180deg) scale(1, 1);
+ 
+
+}
+.card-img{
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.card-img:hover img{
+    transform: scale(1.3);
+}
+.card-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* contact us  */
+.icon-contact{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    
+}
+.address{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.address:hover .icon-contact{
+    background-color: var(--primary-color);
+    color: white;
+}
+.mail{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.mail:hover .icon-contact{
+    background-color: var(--primary-color);
+    color: white;
+}
+.phone{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.phone:hover .icon-contact{
+    background-color: var(--primary-color);
+    color: white;
+}
+.contact-name, .conact-mail, .conact-message{
+    background-color:#F4F4F4;
+}
+
+.contact-submit .buton-contact {
+    padding: 10px 40px;
+    background-color:#1C1C1C;
+    border-radius: 6px;
+    color: white;
+    transition: all 0.5s;
+}
+.contact-submit .buton-contact:hover{
+background-color: white;
+color: black;
+border: 2px solid var(--primary-color);
+}
